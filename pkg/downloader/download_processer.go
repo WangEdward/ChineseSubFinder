@@ -150,9 +150,10 @@ func (d *Downloader) seriesDlFunc(ctx context.Context, job taskQueue2.OneJob, do
 			break
 		case <-ctx.Done():
 			{
-				err = errors.New(fmt.Sprintf("cancel at NeedDlEpsKeyList.oneVideoSelectBestSub, %v S%dE%d", seriesInfo.Name, episodeInfo.Season, episodeInfo.Episode))
-				d.downloadQueue.AutoDetectUpdateJobStatus(job, err)
-				return err
+				// err = errors.New(fmt.Sprintf("cancel at NeedDlEpsKeyList.oneVideoSelectBestSub, %v S%dE%d", seriesInfo.Name, episodeInfo.Season, episodeInfo.Episode))
+				d.log.Infoln("cancel at NeedDlEpsKeyList.oneVideoSelectBestSub1", seriesInfo.Name, episodeInfo.Season, episodeInfo.Episode)
+				// d.downloadQueue.AutoDetectUpdateJobStatus(job, err)
+				// return err
 			}
 		}
 
@@ -207,9 +208,10 @@ func (d *Downloader) seriesDlFunc(ctx context.Context, job taskQueue2.OneJob, do
 			break
 		case <-ctx.Done():
 			{
-				err = errors.New(fmt.Sprintf("cancel at NeedDlEpsKeyList.oneVideoSelectBestSub, %v S%dE%d", seriesInfo.Name, episodeInfo.Season, episodeInfo.Episode))
-				d.downloadQueue.AutoDetectUpdateJobStatus(job, err)
-				return err
+				// err = errors.New(fmt.Sprintf("cancel at NeedDlEpsKeyList.oneVideoSelectBestSub, %v S%dE%d", seriesInfo.Name, episodeInfo.Season, episodeInfo.Episode))
+				d.log.Infoln("cancel at NeedDlEpsKeyList.oneVideoSelectBestSub2", seriesInfo.Name, episodeInfo.Season, episodeInfo.Episode)
+				// d.downloadQueue.AutoDetectUpdateJobStatus(job, err)
+				// return err
 			}
 		}
 	}
