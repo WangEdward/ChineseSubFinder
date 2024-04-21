@@ -243,12 +243,14 @@ func IsWantedVideoExtDef(fileName string) bool {
 		_defExtMap[common.VideoExtRmvb] = common.VideoExtRmvb
 		_defExtMap[common.VideoExtIso] = common.VideoExtIso
 		_defExtMap[common.VideoExtM2ts] = common.VideoExtM2ts
+		_defExtMap[common.VideoExtStrm] = common.VideoExtStrm
 
 		_wantedExtMap[common.VideoExtMp4] = common.VideoExtMp4
 		_wantedExtMap[common.VideoExtMkv] = common.VideoExtMkv
 		_wantedExtMap[common.VideoExtRmvb] = common.VideoExtRmvb
 		_wantedExtMap[common.VideoExtIso] = common.VideoExtIso
 		_wantedExtMap[common.VideoExtM2ts] = common.VideoExtM2ts
+		_wantedExtMap[common.VideoExtStrm] = common.VideoExtStrm
 
 		for _, videoExt := range settings.Get().AdvancedSettings.CustomVideoExts {
 			_wantedExtMap[videoExt] = videoExt

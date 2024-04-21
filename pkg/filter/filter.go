@@ -48,6 +48,8 @@ func SkipFileInfo(l *logrus.Logger, curFile os.DirEntry, fileFullPath string) bo
 			//if err == nil {
 			//	fmt.Println("Path:", realPath)
 			//}
+		} else if strings.HasSuffix(curFile.Name(), ".strm") {
+			l.Debugln("curFile is .strm file:", curFile.Name())
 		} else {
 			l.Debugln("curFile.Size() < 1000:", curFile.Name())
 			return true

@@ -30,6 +30,7 @@ const (
 	VideoExtRmvb = ".rmvb"
 	VideoExtIso  = ".iso"
 	VideoExtM2ts = ".m2ts"
+	VideoExtStrm = ".strm"
 )
 
 const (
